@@ -1,7 +1,10 @@
+
 The table has 190 rows and 68 columns, with:
 
 1) With an sample of 30 subjects
+
 2) Six diferent actions (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
 3) The numeric valuables representing the mean and standard deviation of the mesurements done
 
     
