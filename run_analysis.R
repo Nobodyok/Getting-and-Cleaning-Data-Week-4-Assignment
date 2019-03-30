@@ -25,9 +25,6 @@ colnames(Xtotal) <- feat[SelectedVar[,1],2]
 colnames(SubTotal) <- "subject"
 Ytotal$ActivityLabels <- factor(Ytotal$activity, labels = as.character(ActivityLabels[,2]))
 
-
 total <- cbind(Xtotal, ActivityLabels, SubTotal)
 totalmean <- total %>% group_by(ActivityLabels, subject)%>% summarize_each(list(mean))
 write.table(totalmean, file = "C:/R/UCI HAR Dataset/tidydata.txt", row.names = FALSE, col.names = TRUE)
-total <- cbind(Xtotal, activitylabel, SubTotal)
-
